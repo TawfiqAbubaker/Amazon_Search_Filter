@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Reviews Sorter",
+  "version": "1.0",
+  "description": "Sort Amazon search results by number of reviews.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "*://www.amazon.com/*",
+    "*://www.amazon.ca/*",
+    "*://www.amazon.com.mx/*",
+    "*://www.amazon.co.uk/*",
+    "*://www.amazon.fr/*",
+    "*://www.amazon.de/*",
+    "*://www.amazon.it/*",
+    "*://www.amazon.es/*",
+    "*://www.amazon.in/*",
+    "*://www.amazon.jp/*",
+    "*://www.amazon.nl/*",
+    "*://www.amazon.com.tr/*",
+    "*://www.amazon.sa/*",
+    "*://www.amazon.ae/*",
+    "*://www.amazon.au/*",
+    "*://www.amazon.sg/*",
+    "*://www.amazon.com.br/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.amazon.com/*",
+        "*://www.amazon.ca/*",
+        "*://www.amazon.com.mx/*",
+        "*://www.amazon.co.uk/*",
+        "*://www.amazon.fr/*",
+        "*://www.amazon.de/*",
+        "*://www.amazon.it/*",
+        "*://www.amazon.es/*",
+        "*://www.amazon.in/*",
+        "*://www.amazon.jp/*",
+        "*://www.amazon.nl/*",
+        "*://www.amazon.com.tr/*",
+        "*://www.amazon.sa/*",
+        "*://www.amazon.ae/*",
+        "*://www.amazon.au/*",
+        "*://www.amazon.sg/*",
+        "*://www.amazon.com.br/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
