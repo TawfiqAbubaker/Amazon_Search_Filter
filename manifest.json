@@ -4,6 +4,11 @@
   "version": "1.0",
   "description": "Sort Amazon search results by number of reviews.",
   "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "32": "icon32.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  },
   "host_permissions": [
     "*://www.amazon.com/*",
     "*://www.amazon.ca/*",
